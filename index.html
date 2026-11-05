@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuizMaster - Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="quiz-container">
+      <header class="header">
+        <div class="logo">Quiz<span>Master.</span></div>
+        <div class="badge">Web Development Quiz</div>
+      </header>
+
+      <div class="start-screen" id="start-screen">
+        <div class="start-icon">🧠</div>
+
+        <h1>Welcome to <span>QuizMaster!</span></h1>
+
+        <p>Test your knowledge of HTML, CSS & JavaScript.</p>
+
+        <div class="quiz-details">
+          <div>📝 10 Questions</div>
+          <div>💻 Web Development</div>
+          <div>🏆 Get Your Score</div>
+        </div>
+
+        <button id="start-btn" class="btn start-btn">Start Quiz →</button>
+      </div>
+
+      <div class="quiz-content" id="quiz-content">
+        <div class="quiz-info">
+          <span id="question-number">Question 1 of 10</span>
+          <span id="score">Score: 0</span>
+        </div>
+
+        <div class="progress-bar">
+          <div class="progress" id="progress"></div>
+        </div>
+
+        <h2 id="question">Question will appear here</h2>
+
+        <div class="options" id="options"></div>
+
+        <div class="buttons">
+          <button id="prev-btn" class="btn previous">← Previous</button>
+
+          <button id="next-btn" class="btn next">Next →</button>
+        </div>
+      </div>
+
+      <div class="result-container" id="result-container">
+        <div class="result-icon">🏆</div>
+
+        <h1>Quiz Completed!</h1>
+
+        <p>Your final score is:</p>
+
+        <div class="final-score" id="final-score">0 / 10</div>
+
+        <p id="result-message">Great job!</p>
+
+        <button id="restart-btn" class="btn restart">Try Again ↻</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
